@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+   .step{
+      background-color: gray;
+   }
+   tr{
+      background-color: whitesmoke;
+   }
+   *{
+      text-align: center;
+   }
+</style>
+
+</head>
+<body>
+<!-- 폼태그 -->
+<form action="Ex11_userInfo" method="post">
+  <!-- 테이블 생성 -->
+   <table>
+      <tr class="step"> 
+         <td colspan="2"> Step1 : 아이디/비번 입력 </td> 
+      </tr>
+      <tr>
+         <td> 아이디 : </td>
+         <td> <input type="text" name="id"> </td>
+      </tr>
+      <tr>
+         <td> 비밀번호 : </td>
+         <td> <input type="password" name="pw"> </td>
+      </tr>
+      <tr class="step"> 
+         <td colspan="2"> Step2 : 개인정보 </td> 
+      </tr>
+      <tr>
+         <td> 성별 : </td>
+         <td> 
+            남 <input type="radio" name="gender" value="male"> 
+            여 <input type="radio" name="gender" value="female">
+         </td>
+      </tr>
+      <tr>
+         <td> 혈액형 : </td>
+         <td> 
+            <select name="blood">
+               <option> A형 </option>
+               <option> B형 </option>
+               <option> AB형 </option>
+               <option> O형 </option>
+            </select>
+         </td>
+      </tr>
+      <tr>
+         <td> 생일 : </td>
+         <td> <input type="date" name="birth"> </td>
+      </tr>
+      <tr class="step"> 
+         <td colspan="2"> Step3 : 선호도 </td> 
+      </tr>
+      <tr>
+         <td> 취미 : </td>
+         <td> 
+            게임 <input type="checkbox" name="hobby" value="게임"> 
+            코딩 <input type="checkbox" name="hobby" value="코딩">
+            운동 <input type="checkbox" name="hobby" value="운동">
+         </td>
+      </tr>
+      <tr>
+         <td> 좋아하는 색깔 : </td>
+         <td> <input type="color" name="color"> </td>
+      </tr>
+      <tr class="step"> 
+         <td colspan="2"> Step4 : 하고 싶은 말 </td> 
+      </tr>
+      <tr>
+         <td colspan="2"> <textarea rows="5" cols="35" name="message"></textarea> </td>
+      </tr>
+      <tr>
+         <td colspan="2"> 
+            <input type="submit" value="제출">
+         </td>
+      </tr>
+   </table>
+   
+
+</form>
+
+
+    
+</body>
+</html>
